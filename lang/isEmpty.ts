@@ -13,9 +13,6 @@
  * - true
  * - numbers
  * - functions
- *
- * @param val - Any value to check
- * @returns true if empty, false otherwise
  */
 export function isEmpty(val: unknown): boolean {
   if (val == null) return true; // null or undefined

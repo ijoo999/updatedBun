@@ -1,15 +1,41 @@
 {
   "name": "utils-modern",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "A modern utility library rewritten in TypeScript and Bun. Lightweight, modular, and test-covered.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "type": "module",
-  "private": true,
   "scripts": {
+    "build": "bun build index.ts --outdir dist --minify --target=bun --format esm",
     "test": "bun test"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/word-wrap": "^1.2.0"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "keywords": [
+    "bun",
+    "typescript",
+    "utility",
+    "utils",
+    "array",
+    "object",
+    "string",
+    "modern",
+    "lightweight"
+  ],
+  "author": "Ijoo Yoon",
+  "license": "MIT",
+  "dependencies": {
+    "word-wrap": "^1.2.5"
   }
 }

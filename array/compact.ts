@@ -1,15 +1,5 @@
 /**
  * Remove all falsey values from an array.
- *
- * ```js
- * compact([null, a, undefined, 0, false, b, c, '']);
- * //=> [a, b, c]
- * ```
- *
- * @name .compact
- * @param {Array} `arr`
- * @return {Array}
- * @api public
  */
 
 export function compact<T>(arr: T[]): NonNullable<T>[] {

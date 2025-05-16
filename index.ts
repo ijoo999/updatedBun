@@ -1,10 +1,8 @@
-// src/utils/index.ts
-
-export * from './array/compact';
-export * from './array/difference';
-
-export * from './function/identity';
-export * from './function/noop';
-
-export * from './lang/isEmpty';
-export * from './lang/isPlainObject';
+export * from './array';
+export * from './object';
+export * from './string';
+export * from './collection';
+export * from './fs';
+export * from './function';
+export * from './lang';
+export * from './math';
